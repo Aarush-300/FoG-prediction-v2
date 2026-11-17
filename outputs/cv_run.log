@@ -1,0 +1,59 @@
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:1400: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:6648: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tensorflow\python\autograph\converters\directives.py:126: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+[ds_tcn] fold 0 val=[2] PR-AUC 0.6617 (epochs 40)
+[ds_tcn] fold 1 val=[1] PR-AUC 0.7700 (epochs 40)
+[ds_tcn] fold 2 val=[19] PR-AUC 0.6348 (epochs 40)
+[ds_tcn] fold 3 val=[3, 6, 7, 8, 10, 12, 13, 14, 16, 17] PR-AUC 0.2674 (epochs 40)
+[ds_tcn] fold 4 val=[4, 5, 9, 11, 15] PR-AUC 0.3148 (epochs 40)
+[ds_tcn] pooled OOF PR-AUC 0.4198  fold mean 0.5298
+[inception] fold 0 val=[2] PR-AUC 0.7334 (epochs 40)
+[inception] fold 1 val=[1] PR-AUC 0.7862 (epochs 40)
+[inception] fold 2 val=[19] PR-AUC 0.8359 (epochs 40)
+[inception] fold 3 val=[3, 6, 7, 8, 10, 12, 13, 14, 16, 17] PR-AUC 0.1410 (epochs 40)
+[inception] fold 4 val=[4, 5, 9, 11, 15] PR-AUC 0.2080 (epochs 40)
+[inception] pooled OOF PR-AUC 0.4380  fold mean 0.5409
+[hybrid] fold 0 val=[2] PR-AUC 0.7082 (epochs 40)
+[hybrid] fold 1 val=[1] PR-AUC 0.7774 (epochs 40)
+[hybrid] fold 2 val=[19] PR-AUC 0.8106 (epochs 37)
+[hybrid] fold 3 val=[3, 6, 7, 8, 10, 12, 13, 14, 16, 17] PR-AUC 0.2553 (epochs 40)
+[hybrid] fold 4 val=[4, 5, 9, 11, 15] PR-AUC 0.4452 (epochs 40)
+[hybrid] pooled OOF PR-AUC 0.4402  fold mean 0.5993
+{
+  "ds_tcn": {
+    "pooled_ap": 0.41977484675631427,
+    "fold_ap": [
+      0.661674344706682,
+      0.7700393574663075,
+      0.6348295010728399,
+      0.267447216805401,
+      0.31480827305679226
+    ]
+  },
+  "inception": {
+    "pooled_ap": 0.4379586845868938,
+    "fold_ap": [
+      0.7334190276963339,
+      0.7862297882738952,
+      0.8358632900055012,
+      0.14103335987047486,
+      0.20800768338205794
+    ]
+  },
+  "hybrid": {
+    "pooled_ap": 0.4401782951390886,
+    "fold_ap": [
+      0.708242042148233,
+      0.777407359391143,
+      0.8105627526969464,
+      0.25528763941458743,
+      0.4451829701918185
+    ]
+  }
+}
+exit 0

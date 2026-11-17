@@ -1,0 +1,170 @@
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:1400: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:6648: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tensorflow\python\autograph\converters\directives.py:126: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+[ds_tcn] seed 0 val=[2] PR-AUC 0.6563
+[ds_tcn] seed 1 val=[1] PR-AUC 0.5750
+[ds_tcn] seed 2 val=[19] PR-AUC 0.6992
+[ds_tcn] seed 3 val=[3, 6, 7, 8, 10, 12, 13, 14, 16, 17] PR-AUC 0.1983
+[ds_tcn] seed 4 val=[4, 5, 9, 11, 15] PR-AUC 0.2887
+{
+  "ds_tcn_final": [
+    {
+      "seed": 0,
+      "val_subjects": [
+        2
+      ],
+      "val_ap": 0.6563254255960819,
+      "weights": "C:\\Users\\aarus\\Parkinson's-FoG-v2\\fog_pipeline\\outputs\\ds_tcn_seed0.weights.h5",
+      "mean": [
+        -1.0072075128555298,
+        0.131087064743042,
+        0.11255756765604019,
+        2.8290412425994873,
+        0.8488143682479858,
+        -0.6533966064453125,
+        1.0777034759521484,
+        53.85014724731445
+      ],
+      "std": [
+        0.1980503350496292,
+        0.3156530559062958,
+        0.19359833002090454,
+        47.680381774902344,
+        23.763294219970703,
+        66.29657745361328,
+        0.2389383763074875,
+        65.93339538574219
+      ]
+    },
+    {
+      "seed": 1,
+      "val_subjects": [
+        1
+      ],
+      "val_ap": 0.5749758641683185,
+      "weights": "C:\\Users\\aarus\\Parkinson's-FoG-v2\\fog_pipeline\\outputs\\ds_tcn_seed1.weights.h5",
+      "mean": [
+        -1.0060416460037231,
+        0.1386699378490448,
+        0.12233676016330719,
+        2.424063205718994,
+        1.0137712955474854,
+        -0.6257901191711426,
+        1.0741068124771118,
+        51.28986740112305
+      ],
+      "std": [
+        0.1880641132593155,
+        0.30597415566444397,
+        0.1805490106344223,
+        45.7854118347168,
+        23.50298309326172,
+        64.09403991699219,
+        0.22829000651836395,
+        64.32263946533203
+      ]
+    },
+    {
+      "seed": 2,
+      "val_subjects": [
+        19
+      ],
+      "val_ap": 0.6992036594792859,
+      "weights": "C:\\Users\\aarus\\Parkinson's-FoG-v2\\fog_pipeline\\outputs\\ds_tcn_seed2.weights.h5",
+      "mean": [
+        -1.007372498512268,
+        0.1336027979850769,
+        0.10771816223859787,
+        2.3752188682556152,
+        1.0074636936187744,
+        -0.646611213684082,
+        1.0766578912734985,
+        51.87263870239258
+      ],
+      "std": [
+        0.19311532378196716,
+        0.31182706356048584,
+        0.19072383642196655,
+        46.567508697509766,
+        23.59369468688965,
+        64.66434478759766,
+        0.23385031521320343,
+        65.00745391845703
+      ]
+    },
+    {
+      "seed": 3,
+      "val_subjects": [
+        3,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17
+      ],
+      "val_ap": 0.19826362433922243,
+      "weights": "C:\\Users\\aarus\\Parkinson's-FoG-v2\\fog_pipeline\\outputs\\ds_tcn_seed3.weights.h5",
+      "mean": [
+        -1.0034147500991821,
+        0.11879491806030273,
+        0.0866478905081749,
+        2.368929624557495,
+        0.9446181654930115,
+        -0.3251776397228241,
+        1.059220552444458,
+        40.18259811401367
+      ],
+      "std": [
+        0.16303791105747223,
+        0.28335827589035034,
+        0.16455717384815216,
+        37.91981506347656,
+        16.824386596679688,
+        53.682228088378906,
+        0.20046204328536987,
+        54.73414993286133
+      ]
+    },
+    {
+      "seed": 4,
+      "val_subjects": [
+        4,
+        5,
+        9,
+        11,
+        15
+      ],
+      "val_ap": 0.28868095283008743,
+      "weights": "C:\\Users\\aarus\\Parkinson's-FoG-v2\\fog_pipeline\\outputs\\ds_tcn_seed4.weights.h5",
+      "mean": [
+        -1.0080618858337402,
+        0.1243913397192955,
+        0.10305306315422058,
+        1.876065969467163,
+        1.0475521087646484,
+        -0.6193559169769287,
+        1.0687572956085205,
+        47.273681640625
+      ],
+      "std": [
+        0.17833572626113892,
+        0.29084596037864685,
+        0.18077780306339264,
+        43.67987823486328,
+        23.579687118530273,
+        60.71337890625,
+        0.21762347221374512,
+        62.63655090332031
+      ]
+    }
+  ]
+}

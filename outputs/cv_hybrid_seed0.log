@@ -1,0 +1,26 @@
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:1400: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:6648: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tensorflow\python\autograph\converters\directives.py:126: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+[hybrid] fold 0 val=[2] PR-AUC 0.7361 (epochs 40)
+[hybrid] fold 1 val=[1] PR-AUC 0.7854 (epochs 40)
+[hybrid] fold 2 val=[19] PR-AUC 0.8522 (epochs 40)
+[hybrid] fold 3 val=[3, 6, 7, 8, 10, 12, 13, 14, 16, 17] PR-AUC 0.2501 (epochs 40)
+[hybrid] fold 4 val=[4, 5, 9, 11, 15] PR-AUC 0.4440 (epochs 40)
+[hybrid] pooled OOF PR-AUC 0.4749  fold mean 0.6135
+{
+  "hybrid": {
+    "pooled_ap": 0.47493431127651387,
+    "fold_ap": [
+      0.7360723227093213,
+      0.7853596468039157,
+      0.8521979952901979,
+      0.25012800926032186,
+      0.44395915675568104
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:1400: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tf_keras\src\backend.py:6648: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tensorflow\python\autograph\converters\directives.py:126: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+C:\Users\aarus\anaconda3\envs\fog\Lib\site-packages\tensorflow\lite\python\convert.py:953: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
+  warnings.warn(
+Summary on the non-converted ops:
+---------------------------------
+ * Accepted dialects: tfl, builtin, func
+ * Non-Converted Ops: 20, Total Ops 107, % non-converted = 18.69 %
+ * 20 ARITH ops
+
+- arith.constant:   20 occurrences  (f32: 6, i32: 14)
+
+
+
+  (uq_8: 4, f32: 4)
+  (uq_8: 1)
+  (f32: 3)
+  (uq_8: 6)
+  (uq_8: 2, f32: 3)
+  (f32: 8)
+  (uq_8: 12)
+  (f32: 1)
+  (f32: 1)
+  (f32: 1)
+  (uq_8: 11, uq_32: 8)
+  (uq_8: 4)
+  (uq_8: 12)
+  (uq_8: 3)
+fully_quantize: 0, inference_type: 6, input_inference_type: INT8, output_inference_type: INT8
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+per-seed pooled CV PR-AUC: {0: 0.4202, 1: 0.2718, 2: 0.4039, 3: 0.4085, 4: 0.3786}
+deployed seed 0 (val PR-AUC 0.4202, val subjects [2])
+  QAT ep0 val PR-AUC 0.6880
+  QAT ep1 val PR-AUC 0.7141
+  QAT ep2 val PR-AUC 0.7824
+  QAT ep3 val PR-AUC 0.7905
+  QAT ep4 val PR-AUC 0.8073
+  QAT ep5 val PR-AUC 0.8042
+TFLM ops: ['ADD', 'AVERAGE_POOL_2D', 'BATCH_TO_SPACE_ND', 'CONV_2D', 'DEPTHWISE_CONV_2D', 'EXPAND_DIMS', 'FULLY_CONNECTED', 'LOGISTIC', 'MEAN', 'RESHAPE', 'SPACE_TO_BATCH_ND']
+{
+  "model": "ds_tcn",
+  "seed": 0,
+  "params": 7585,
+  "macs": 271232,
+  "int8_file_kb": 28.1875,
+  "val_ap_float": 0.6563254255960819,
+  "val_ap_int8": 0.8013815484659171,
+  "test_ap_float": 0.20593525470857965,
+  "test_ap_int8": 0.40830490249309287
+}
